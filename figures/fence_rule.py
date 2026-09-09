@@ -32,8 +32,7 @@ def render(f):
             transform=ax.transAxes, fontsize=8.5, color=S.INK_2, ha="center")
     ax.set_xlabel("Coverage time fence (days)")
     ax.set_ylabel("Fill rate (%)")
-    ax.set_title("All four window lengths recover at the same fence.\n"
-                 "The cliff tracks the lead time, not the window.", fontsize=11)
+    ax.set_title("Fill rate against coverage time fence", fontsize=12, pad=14)
     ax.legend(loc="lower right", fontsize=9)
     S.clean(ax)
     fig.tight_layout()

@@ -30,8 +30,8 @@ def render(by_period):
         ax.set_xlabel("Average demand interval (buckets)")
         S.clean(ax, value_axis=None)
     axes[0].set_ylabel("Squared coefficient of variation")
-    fig.suptitle("The demand class is a property of the review period, "
-                 "not of the item alone", y=1.0, fontsize=12, fontweight="semibold")
+    fig.suptitle("Demand classification by review period",
+                 y=1.02, fontsize=12, fontweight="semibold")
     fig.tight_layout()
     fig.savefig(NAME, dpi=200, bbox_inches="tight")
     plt.close(fig)

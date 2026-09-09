@@ -81,8 +81,7 @@ def render(tr):
                             fontsize=9, color=col, fontweight="semibold")
     ax.set_xlabel("Average stock held (days of cover)")
     ax.set_ylabel("Purchase orders raised per item per year")
-    ax.set_title("The floating window traces the lower edge of the trade.\n"
-                 "Neither LN-only method reaches inside it.", fontsize=11)
+    ax.set_title("Purchase orders against stock held", fontsize=12, pad=14)
     ax.legend(loc="upper right", fontsize=9)
     S.clean(ax)
     fig.tight_layout()

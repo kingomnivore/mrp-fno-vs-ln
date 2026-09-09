@@ -46,9 +46,7 @@ def render(scored):
         if cfg.startswith(LN_ONLY):
             ax.get_yticklabels()[i].set_color(S.C_LN)
             ax.get_yticklabels()[i].set_fontweight("semibold")
-    ax.set_title("Balanced score by business case. A solid box is a clear winner,\n"
-                 "a dashed pair is a tie. Orange labels are methods only LN documents.",
-                 fontsize=11)
+    ax.set_title("Balanced score by business case", fontsize=12, pad=14)
     fig.colorbar(im, ax=ax, label="Balanced score (100 is best in that case)",
                  shrink=0.85)
     fig.tight_layout()

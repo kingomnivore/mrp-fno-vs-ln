@@ -32,9 +32,8 @@ def render(s):
             if hi - lo < 0.15 * abs(mid):
                 ax.set_ylim(mid - 0.15 * abs(mid), mid + 0.15 * abs(mid))
     axes[0].legend(fontsize=8, loc="lower right")
-    fig.suptitle("Only plan stability moves with the assumption. "
-                 "Service, order count and the elasticity do not.",
-                 y=1.06, fontsize=12, fontweight="semibold")
+    fig.suptitle("Outcomes against forecast error",
+                 y=1.05, fontsize=12, fontweight="semibold")
     fig.tight_layout()
     fig.savefig(NAME, dpi=200, bbox_inches="tight")
     plt.close(fig)
