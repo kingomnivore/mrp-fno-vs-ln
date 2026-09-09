@@ -1,6 +1,6 @@
 # Master planning in Dynamics 365 F&O and Infor LN
 
-Which lot-sizing rules the two products actually share, and whether the two F&O does not have would be worth asking for.
+Which lot-sizing rules the two products actually share, and whether the two that F&O does not have are worth asking for.
 
 Supporting code for *Master planning (MRP) module in Dynamics 365 F&O and Infor LN*, published by CodeCore Dynamics.
 
